@@ -971,3 +971,391 @@ a {
   }
 
 }
+/* =========================================
+   HOMEPAGE EDITORIAL REFINEMENT
+   ========================================= */
+
+.site-header {
+  width: min(1100px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 26px 0;
+}
+
+
+/* =========================================
+   HOMEPAGE HERO
+   ========================================= */
+
+.hero {
+  width: min(900px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 92px 0 84px;
+}
+
+.hero h1 {
+  max-width: 760px;
+  margin: 18px 0 24px;
+  font-size: clamp(48px, 5.5vw, 68px);
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+}
+
+.hero-text {
+  max-width: 600px;
+  margin: 0 0 30px;
+  font-size: 19px;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+
+/* =========================================
+   IDEA
+   ========================================= */
+
+.intro {
+  width: min(900px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 72px 0;
+  border-top: 1px solid var(--line);
+}
+
+.intro-content {
+  max-width: 680px;
+  margin-left: 80px;
+}
+
+.intro .large-text {
+  margin: 14px 0 28px;
+  font-size: 32px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.intro-content > p:not(.large-text) {
+  max-width: 620px;
+  margin: 0 0 16px;
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--muted);
+}
+
+
+/* =========================================
+   NEWSLETTER LIST
+   ========================================= */
+
+.featured {
+  width: min(900px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 72px 0;
+  border-top: 1px solid var(--line);
+}
+
+.feature-card {
+  display: grid;
+  grid-template-columns: 60px minmax(0, 1fr);
+  gap: 28px;
+  margin-top: 24px;
+  padding: 32px 0;
+  border-bottom: 1px solid var(--line);
+  background: transparent;
+}
+
+.feature-number {
+  padding-top: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+}
+
+.feature-content {
+  max-width: 700px;
+}
+
+.feature-content .eyebrow {
+  margin-bottom: 12px;
+}
+
+.feature-content h2 {
+  max-width: 680px;
+  margin: 0 0 16px;
+  font-size: 30px;
+  line-height: 1.18;
+  letter-spacing: -0.025em;
+}
+
+.feature-content > p {
+  max-width: 620px;
+  margin: 0 0 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+
+/* =========================================
+   EXPERIMENTS
+   ========================================= */
+
+.experiments {
+  width: min(900px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 72px 0;
+  border-top: 1px solid var(--line);
+}
+
+.experiments-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 320px);
+  gap: 60px;
+  align-items: end;
+  margin: 18px 0 34px;
+}
+
+.experiments-header h2 {
+  margin: 0;
+  font-size: 36px;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+}
+
+.experiments-header p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.experiment-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 30px;
+  align-items: center;
+  padding: 26px 0;
+  border-top: 1px solid var(--line);
+  text-decoration: none;
+  color: inherit;
+}
+
+.experiment-card h3 {
+  margin: 7px 0 8px;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+}
+
+.experiment-card p:last-child {
+  max-width: 600px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.experiment-number {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  color: var(--accent);
+}
+
+.experiment-arrow {
+  font-size: 22px;
+  color: var(--accent);
+}
+
+
+/* =========================================
+   CLOSING
+   ========================================= */
+
+.closing {
+  width: min(900px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 90px 0 100px;
+  border-top: 1px solid var(--line);
+}
+
+.closing h2 {
+  max-width: 650px;
+  margin: 18px 0 20px;
+  font-size: 42px;
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+}
+
+.closing > p:not(.eyebrow):not(.signoff) {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.closing-line {
+  width: 48px;
+  height: 1px;
+  margin: 34px 0 20px;
+  background: var(--line);
+}
+
+.signoff {
+  margin: 0;
+  font-family: "DM Serif Display", Georgia, serif;
+  font-size: 22px;
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+.site-footer {
+  width: min(1100px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 24px 0 30px;
+  border-top: 1px solid var(--line);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+
+/* =========================================
+   HOMEPAGE MOBILE
+   ========================================= */
+
+@media (max-width: 700px) {
+
+  .site-header {
+    width: calc(100% - 32px);
+    padding: 20px 0;
+  }
+
+  .logo {
+    font-size: 11px;
+  }
+
+  .nav {
+    gap: 12px;
+  }
+
+  .nav a {
+    font-size: 11px;
+  }
+
+
+  .hero {
+    width: calc(100% - 32px);
+    padding: 68px 0 58px;
+  }
+
+  .hero h1 {
+    margin: 14px 0 20px;
+    font-size: 40px;
+    line-height: 1;
+  }
+
+  .hero-text {
+    font-size: 17px;
+    line-height: 1.55;
+  }
+
+
+  .intro {
+    width: calc(100% - 32px);
+    padding: 54px 0;
+  }
+
+  .intro-content {
+    margin-left: 0;
+  }
+
+  .intro .large-text {
+    font-size: 27px;
+    line-height: 1.2;
+  }
+
+  .intro-content > p:not(.large-text) {
+    font-size: 16px;
+  }
+
+
+  .featured {
+    width: calc(100% - 32px);
+    padding: 54px 0;
+  }
+
+  .feature-card {
+    grid-template-columns: 34px minmax(0, 1fr);
+    gap: 14px;
+    padding: 24px 0;
+  }
+
+  .feature-content h2 {
+    font-size: 24px;
+    line-height: 1.22;
+  }
+
+  .feature-content > p {
+    font-size: 15px;
+  }
+
+
+  .experiments {
+    width: calc(100% - 32px);
+    padding: 54px 0;
+  }
+
+  .experiments-header {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 26px;
+  }
+
+  .experiments-header h2 {
+    font-size: 29px;
+  }
+
+  .experiments-header p {
+    font-size: 15px;
+  }
+
+  .experiment-card {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 18px;
+    padding: 22px 0;
+  }
+
+  .experiment-card h3 {
+    font-size: 21px;
+  }
+
+  .experiment-card p:last-child {
+    font-size: 15px;
+  }
+
+
+  .closing {
+    width: calc(100% - 32px);
+    padding: 68px 0 76px;
+  }
+
+  .closing h2 {
+    font-size: 34px;
+    line-height: 1.08;
+  }
+
+  .closing > p:not(.eyebrow):not(.signoff) {
+    font-size: 16px;
+  }
+
+
+  .site-footer {
+    width: calc(100% - 32px);
+    padding-bottom: 24px;
+  }
+
+}
