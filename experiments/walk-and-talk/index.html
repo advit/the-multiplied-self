@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>The Walk & Talk | The Multiplied Self</title>
+
+  <meta
+    name="description"
+    content="Turn something you want to understand into a podcast you can talk to."
+  >
+
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <a href="/" class="logo">THE MULTIPLIED SELF</a>
+
+    <nav class="nav">
+      <a href="/">Home</a>
+      <a href="#experiment">Experiment</a>
+      <a href="#reflection">Reflect</a>
+    </nav>
+  </header>
+
+
+  <main id="experiment">
+
+    <section class="experiment-hero">
+
+      <p class="eyebrow">EXPERIMENT 01</p>
+
+      <h1>
+        The Walk<br>
+        <em>&amp; Talk</em>
+      </h1>
+
+      <p class="experiment-intro">
+        Turn something you want to understand
+        into a podcast you can talk to.
+      </p>
+
+      <div class="experiment-meta">
+        <span>10–20 minutes</span>
+        <span>NotebookLM</span>
+        <span>Headphones optional</span>
+      </div>
+
+    </section>
+
+
+    <section class="experiment-section">
+
+      <div class="experiment-step">
+        <span>01</span>
+        <div>
+          <h2>Find something worth understanding.</h2>
+
+          <p>
+            Don't pick something just because it's interesting.
+            Pick something you actually want to understand.
+          </p>
+
+          <p>
+            An article. A PDF. A report. A book chapter.
+            Research you've been meaning to read.
+            Something from work.
+          </p>
+
+          <div class="prompt-box">
+            <strong>Ask yourself:</strong>
+            <p>
+              If I understood this better, would it be useful to me?
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="experiment-step">
+        <span>02</span>
+
+        <div>
+          <h2>Turn it into a podcast.</h2>
+
+          <p>
+            For this experiment, we'll use NotebookLM.
+          </p>
+
+          <p>
+            Create a new notebook, add your source,
+            and generate an <strong>Audio Overview</strong>.
+          </p>
+
+          <a
+            href="https://notebooklm.google.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button"
+          >
+            Open NotebookLM <span>↗</span>
+          </a>
+
+          <p class="small-note">
+            The Multiplied Self doesn't need access to your
+            documents. Your source stays in the tool you're using.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="experiment-step">
+        <span>03</span>
+
+        <div>
+          <h2>Don't just listen. Talk back.</h2>
+
+          <p>
+            This is the part that makes the experiment interesting.
+          </p>
+
+          <p>
+            You're not trying to finish the podcast.
+            You're trying to understand something.
+          </p>
+
+          <div class="prompt-list">
+
+            <div>
+              <span>?</span>
+              <p>Wait. What exactly do you mean?</p>
+            </div>
+
+            <div>
+              <span>?</span>
+              <p>Tell me more about that.</p>
+            </div>
+
+            <div>
+              <span>?</span>
+              <p>What's the strongest argument against that?</p>
+            </div>
+
+          </div>
+
+          <p>
+            When something catches your attention,
+            interrupt it. Ask the question.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="experiment-step">
+        <span>04</span>
+
+        <div>
+          <h2>Leave the screen.</h2>
+
+          <p>
+            Put on your headphones.
+            Start your podcast.
+            Go for a walk.
+          </p>
+
+          <p>
+            Listen. Interrupt. Ask questions.
+            Follow whatever makes you curious.
+          </p>
+
+          <div class="walk-box">
+            <span class="walk-icon">◌</span>
+
+            <div>
+              <strong>Now go.</strong>
+              <p>
+                You don't need to finish the podcast.
+                You just need to notice what you start thinking about.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="experiment-step" id="reflection">
+        <span>05</span>
+
+        <div>
+          <h2>Come back.</h2>
+
+          <p>
+            You don't need to write an essay.
+            Just capture what changed.
+          </p>
+
+          <div class="reflection">
+
+            <label for="understood">
+              What did you understand differently?
+            </label>
+
+            <textarea
+              id="understood"
+              placeholder="A sentence or two is enough..."
+            ></textarea>
+
+
+            <label for="question">
+              What question are you taking with you?
+            </label>
+
+            <textarea
+              id="question"
+              placeholder="What are you curious about now?"
+            ></textarea>
+
+
+            <label>
+              Would you do this again?
+            </label>
+
+            <div class="choice-group">
+
+              <button type="button" data-choice="yes">
+                Yes
+              </button>
+
+              <button type="button" data-choice="maybe">
+                Maybe
+              </button>
+
+              <button type="button" data-choice="no">
+                No
+              </button>
+
+            </div>
+
+            <button type="button" class="button" id="save-reflection">
+              Save my reflection
+            </button>
+
+            <p class="saved-message" id="saved-message">
+              Your reflection is saved in this browser.
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+
+    <section class="experiment-insight">
+
+      <p class="eyebrow">WHAT JUST HAPPENED?</p>
+
+      <h2>
+        You changed the way<br>
+        you consume information.
+      </h2>
+
+      <div class="flow">
+
+        <span>Source</span>
+        <span>→</span>
+        <span>Listen</span>
+        <span>→</span>
+        <span>Interrupt</span>
+        <span>→</span>
+        <span>Question</span>
+        <span>→</span>
+        <span>Explore</span>
+
+      </div>
+
+      <p>
+        The interesting part isn't that AI made a podcast.
+        It's that you could have a conversation with something
+        you were trying to understand.
+      </p>
+
+    </section>
+
+
+    <section class="go-deeper">
+
+      <p class="eyebrow">GO DEEPER</p>
+
+      <h2>Add another source.</h2>
+
+      <p>
+        Now ask:
+        <em>Where do these two sources agree and disagree?</em>
+      </p>
+
+      <p>
+        Same idea. More context.
+      </p>
+
+    </section>
+
+
+    <section class="experiment-end">
+
+      <p class="eyebrow">ONE LAST THING</p>
+
+      <h2>
+        The screen doesn't<br>
+        have to come with you.
+      </h2>
+
+      <a href="/" class="text-link">
+        Back to The Multiplied Self <span>→</span>
+      </a>
+
+    </section>
+
+  </main>
+
+
+  <footer class="site-footer">
+
+    <span>THE MULTIPLIED SELF</span>
+
+    <span>Go multiply yourself!</span>
+
+  </footer>
+
+
+  <script>
+
+    const understood = document.getElementById("understood");
+    const question = document.getElementById("question");
+    const savedMessage = document.getElementById("saved-message");
+
+    let selectedChoice = "";
+
+    const saved = localStorage.getItem("walkAndTalkReflection");
+
+    if (saved) {
+
+      const reflection = JSON.parse(saved);
+
+      understood.value = reflection.understood || "";
+      question.value = reflection.question || "";
+      selectedChoice = reflection.choice || "";
+
+      document
+        .querySelector(`[data-choice="${selectedChoice}"]`)
+        ?.classList.add("selected");
+    }
+
+
+    document.querySelectorAll("[data-choice]").forEach(button => {
+
+      button.addEventListener("click", () => {
+
+        document
+          .querySelectorAll("[data-choice]")
+          .forEach(item => item.classList.remove("selected"));
+
+        button.classList.add("selected");
+
+        selectedChoice = button.dataset.choice;
+
+      });
+
+    });
+
+
+    document
+      .getElementById("save-reflection")
+      .addEventListener("click", () => {
+
+        const reflection = {
+          understood: understood.value,
+          question: question.value,
+          choice: selectedChoice
+        };
+
+        localStorage.setItem(
+          "walkAndTalkReflection",
+          JSON.stringify(reflection)
+        );
+
+        savedMessage.classList.add("visible");
+
+      });
+
+  </script>
+
+</body>
+</html>
