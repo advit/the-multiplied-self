@@ -465,3 +465,439 @@ a {
   }
 
 }
+/* =========================================
+   WALK & TALK EXPERIMENT
+   ========================================= */
+
+.experiment-hero {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+
+  padding: 120px 0 110px;
+}
+
+
+.experiment-hero h1 {
+  margin: 0;
+
+  font-family: "DM Serif Display", serif;
+  font-size: clamp(72px, 12vw, 150px);
+  font-weight: 400;
+  line-height: 0.86;
+  letter-spacing: -0.04em;
+}
+
+
+.experiment-hero h1 em {
+  color: var(--accent);
+}
+
+
+.experiment-intro {
+  max-width: 680px;
+  margin: 50px 0 35px;
+
+  font-family: "DM Serif Display", serif;
+  font-size: clamp(28px, 4vw, 48px);
+  line-height: 1.08;
+}
+
+
+.experiment-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+
+.experiment-meta span {
+  padding: 7px 12px;
+
+  border: 1px solid var(--line);
+
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+
+.experiment-section {
+  width: min(980px, calc(100% - 48px));
+  margin: 0 auto;
+
+  border-top: 1px solid var(--line);
+}
+
+
+.experiment-step {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 50px;
+
+  padding: 90px 0;
+
+  border-bottom: 1px solid var(--line);
+}
+
+
+.experiment-step > span {
+  font-family: "DM Serif Display", serif;
+  font-size: 42px;
+  color: var(--accent);
+}
+
+
+.experiment-step h2 {
+  max-width: 700px;
+  margin: 0 0 25px;
+
+  font-family: "DM Serif Display", serif;
+  font-size: clamp(38px, 5vw, 62px);
+  font-weight: 400;
+  line-height: 1;
+}
+
+
+.experiment-step p {
+  max-width: 650px;
+
+  color: var(--muted);
+}
+
+
+.prompt-box {
+  max-width: 650px;
+  margin-top: 35px;
+  padding: 28px 30px;
+
+  background: var(--warm);
+}
+
+
+.prompt-box strong {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+}
+
+
+.prompt-box p {
+  margin-bottom: 0;
+
+  font-family: "DM Serif Display", serif;
+  font-size: 25px;
+  color: var(--ink);
+}
+
+
+.small-note {
+  margin-top: 20px;
+
+  font-size: 12px;
+  color: var(--muted);
+}
+
+
+.prompt-list {
+  max-width: 650px;
+  margin: 40px 0;
+}
+
+
+.prompt-list > div {
+  display: flex;
+  gap: 20px;
+  align-items: baseline;
+
+  padding: 18px 0;
+
+  border-top: 1px solid var(--line);
+}
+
+
+.prompt-list > div:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+
+.prompt-list span {
+  font-family: "DM Serif Display", serif;
+  font-size: 25px;
+  color: var(--accent);
+}
+
+
+.prompt-list p {
+  margin: 0;
+
+  font-family: "DM Serif Display", serif;
+  font-size: 24px;
+  color: var(--ink);
+}
+
+
+.walk-box {
+  max-width: 650px;
+  margin-top: 40px;
+  padding: 35px;
+
+  display: flex;
+  gap: 25px;
+  align-items: flex-start;
+
+  background: var(--ink);
+  color: var(--white);
+}
+
+
+.walk-icon {
+  font-size: 36px;
+  line-height: 1;
+}
+
+
+.walk-box strong {
+  font-family: "DM Serif Display", serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+
+.walk-box p {
+  margin-bottom: 0;
+  color: #d6d2ca;
+}
+
+
+.reflection {
+  max-width: 650px;
+  margin-top: 40px;
+}
+
+
+.reflection label {
+  display: block;
+
+  margin: 30px 0 10px;
+
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+
+.reflection textarea {
+  display: block;
+
+  width: 100%;
+  min-height: 120px;
+
+  padding: 18px;
+
+  resize: vertical;
+
+  border: 1px solid var(--line);
+  border-radius: 0;
+
+  background: var(--white);
+  color: var(--ink);
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+}
+
+
+.reflection textarea:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+}
+
+
+.choice-group {
+  display: flex;
+  gap: 10px;
+
+  margin-bottom: 35px;
+}
+
+
+.choice-group button {
+  padding: 10px 18px;
+
+  border: 1px solid var(--line);
+
+  background: transparent;
+
+  cursor: pointer;
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+}
+
+
+.choice-group button:hover,
+.choice-group button.selected {
+  background: var(--ink);
+  color: var(--white);
+  border-color: var(--ink);
+}
+
+
+.saved-message {
+  display: none;
+
+  margin-top: 15px;
+
+  font-size: 12px;
+  color: var(--accent);
+}
+
+
+.saved-message.visible {
+  display: block;
+}
+
+
+.experiment-insight {
+  width: min(980px, calc(100% - 48px));
+  margin: 0 auto;
+
+  padding: 130px 0;
+
+  text-align: center;
+}
+
+
+.experiment-insight h2 {
+  margin: 0;
+
+  font-family: "DM Serif Display", serif;
+  font-size: clamp(45px, 7vw, 82px);
+  font-weight: 400;
+  line-height: 0.98;
+}
+
+
+.flow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+
+  margin: 55px auto;
+
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+
+.flow span:nth-child(even) {
+  color: var(--accent);
+}
+
+
+.experiment-insight > p:last-child {
+  max-width: 600px;
+  margin: 0 auto;
+
+  color: var(--muted);
+  font-size: 17px;
+}
+
+
+.go-deeper {
+  width: min(980px, calc(100% - 48px));
+  margin: 0 auto;
+
+  padding: 100px 0;
+
+  border-top: 1px solid var(--line);
+
+  text-align: center;
+}
+
+
+.go-deeper h2 {
+  margin: 0 0 20px;
+
+  font-family: "DM Serif Display", serif;
+  font-size: clamp(45px, 6vw, 72px);
+  font-weight: 400;
+}
+
+
+.go-deeper p:not(.eyebrow) {
+  color: var(--muted);
+}
+
+
+.experiment-end {
+  width: min(980px, calc(100% - 48px));
+  margin: 0 auto;
+
+  padding: 100px 0 140px;
+
+  text-align: center;
+}
+
+
+.experiment-end h2 {
+  margin: 0 0 45px;
+
+  font-family: "DM Serif Display", serif;
+  font-size: clamp(45px, 7vw, 82px);
+  font-weight: 400;
+  line-height: 0.98;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+  .experiment-hero {
+    width: min(100% - 32px, 1180px);
+    padding: 80px 0 75px;
+  }
+
+  .experiment-hero h1 {
+    font-size: clamp(70px, 20vw, 110px);
+  }
+
+  .experiment-intro {
+    font-size: 30px;
+  }
+
+  .experiment-section {
+    width: min(100% - 32px, 980px);
+  }
+
+  .experiment-step {
+    display: block;
+    padding: 65px 0;
+  }
+
+  .experiment-step > span {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .experiment-step h2 {
+    font-size: 42px;
+  }
+
+  .walk-box {
+    padding: 25px;
+  }
+
+  .experiment-insight,
+  .go-deeper,
+  .experiment-end {
+    width: min(100% - 32px, 980px);
+  }
+
+}
